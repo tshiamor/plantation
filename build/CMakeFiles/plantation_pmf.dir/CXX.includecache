@@ -26,16 +26,6 @@ pcl/filters/extract_indices.h
 pcl/segmentation/progressive_morphological_filter.h
 -
 
-/home/tshiamo/plantation/src/trim.cpp
-pcl/point_types.h
--
-pcl/io/pcd_io.h
--
-pcl/filters/crop_box.h
--
-pcl/filters/conditional_removal.h
--
-
 /usr/include/eigen3/Eigen/Cholesky
 Core
 /usr/include/eigen3/Eigen/Core
@@ -1382,8 +1372,6 @@ pcl/common/copy_point.h
 pcl/point_types.h
 -
 
-/usr/include/pcl-1.8/pcl/common/impl/transforms.hpp
-
 /usr/include/pcl-1.8/pcl/common/io.h
 string
 -
@@ -1402,20 +1390,6 @@ pcl/common/impl/io.hpp
 
 /usr/include/pcl-1.8/pcl/common/point_tests.h
 Eigen/src/StlSupport/details.h
--
-
-/usr/include/pcl-1.8/pcl/common/transforms.h
-pcl/point_cloud.h
--
-pcl/point_types.h
--
-pcl/common/centroid.h
--
-pcl/common/eigen.h
--
-pcl/PointIndices.h
--
-pcl/common/impl/transforms.hpp
 -
 
 /usr/include/pcl-1.8/pcl/console/print.h
@@ -1492,26 +1466,6 @@ boost/function.hpp
 boost/optional.hpp
 -
 
-/usr/include/pcl-1.8/pcl/filters/conditional_removal.h
-pcl/common/eigen.h
--
-pcl/filters/filter.h
--
-pcl/filters/impl/conditional_removal.hpp
--
-
-/usr/include/pcl-1.8/pcl/filters/crop_box.h
-pcl/point_types.h
--
-pcl/filters/filter_indices.h
--
-pcl/common/transforms.h
--
-pcl/common/eigen.h
--
-pcl/filters/impl/crop_box.hpp
--
-
 /usr/include/pcl-1.8/pcl/filters/extract_indices.h
 pcl/filters/filter_indices.h
 -
@@ -1538,20 +1492,6 @@ pcl/filters/impl/filter.hpp
 pcl/filters/filter.h
 -
 pcl/filters/impl/filter_indices.hpp
--
-
-/usr/include/pcl-1.8/pcl/filters/impl/conditional_removal.hpp
-pcl/common/io.h
--
-pcl/common/copy_point.h
--
-pcl/filters/conditional_removal.h
--
-
-/usr/include/pcl-1.8/pcl/filters/impl/crop_box.hpp
-pcl/filters/crop_box.h
--
-pcl/common/io.h
 -
 
 /usr/include/pcl-1.8/pcl/filters/impl/extract_indices.hpp

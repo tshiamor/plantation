@@ -111,17 +111,57 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named plantation
+# Target rules for targets named plantation_trim
 
 # Build rule for target.
-plantation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 plantation
-.PHONY : plantation
+plantation_trim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 plantation_trim
+.PHONY : plantation_trim
 
 # fast build rule for target.
-plantation/fast:
-	$(MAKE) -f CMakeFiles/plantation.dir/build.make CMakeFiles/plantation.dir/build
-.PHONY : plantation/fast
+plantation_trim/fast:
+	$(MAKE) -f CMakeFiles/plantation_trim.dir/build.make CMakeFiles/plantation_trim.dir/build
+.PHONY : plantation_trim/fast
+
+#=============================================================================
+# Target rules for targets named plantation_pmf
+
+# Build rule for target.
+plantation_pmf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 plantation_pmf
+.PHONY : plantation_pmf
+
+# fast build rule for target.
+plantation_pmf/fast:
+	$(MAKE) -f CMakeFiles/plantation_pmf.dir/build.make CMakeFiles/plantation_pmf.dir/build
+.PHONY : plantation_pmf/fast
+
+src/pmf.o: src/pmf.cpp.o
+
+.PHONY : src/pmf.o
+
+# target to build an object file
+src/pmf.cpp.o:
+	$(MAKE) -f CMakeFiles/plantation_pmf.dir/build.make CMakeFiles/plantation_pmf.dir/src/pmf.cpp.o
+.PHONY : src/pmf.cpp.o
+
+src/pmf.i: src/pmf.cpp.i
+
+.PHONY : src/pmf.i
+
+# target to preprocess a source file
+src/pmf.cpp.i:
+	$(MAKE) -f CMakeFiles/plantation_pmf.dir/build.make CMakeFiles/plantation_pmf.dir/src/pmf.cpp.i
+.PHONY : src/pmf.cpp.i
+
+src/pmf.s: src/pmf.cpp.s
+
+.PHONY : src/pmf.s
+
+# target to generate assembly for a file
+src/pmf.cpp.s:
+	$(MAKE) -f CMakeFiles/plantation_pmf.dir/build.make CMakeFiles/plantation_pmf.dir/src/pmf.cpp.s
+.PHONY : src/pmf.cpp.s
 
 src/trim.o: src/trim.cpp.o
 
@@ -129,7 +169,7 @@ src/trim.o: src/trim.cpp.o
 
 # target to build an object file
 src/trim.cpp.o:
-	$(MAKE) -f CMakeFiles/plantation.dir/build.make CMakeFiles/plantation.dir/src/trim.cpp.o
+	$(MAKE) -f CMakeFiles/plantation_trim.dir/build.make CMakeFiles/plantation_trim.dir/src/trim.cpp.o
 .PHONY : src/trim.cpp.o
 
 src/trim.i: src/trim.cpp.i
@@ -138,7 +178,7 @@ src/trim.i: src/trim.cpp.i
 
 # target to preprocess a source file
 src/trim.cpp.i:
-	$(MAKE) -f CMakeFiles/plantation.dir/build.make CMakeFiles/plantation.dir/src/trim.cpp.i
+	$(MAKE) -f CMakeFiles/plantation_trim.dir/build.make CMakeFiles/plantation_trim.dir/src/trim.cpp.i
 .PHONY : src/trim.cpp.i
 
 src/trim.s: src/trim.cpp.s
@@ -147,7 +187,7 @@ src/trim.s: src/trim.cpp.s
 
 # target to generate assembly for a file
 src/trim.cpp.s:
-	$(MAKE) -f CMakeFiles/plantation.dir/build.make CMakeFiles/plantation.dir/src/trim.cpp.s
+	$(MAKE) -f CMakeFiles/plantation_trim.dir/build.make CMakeFiles/plantation_trim.dir/src/trim.cpp.s
 .PHONY : src/trim.cpp.s
 
 # Help Target
@@ -157,8 +197,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... plantation"
+	@echo "... plantation_trim"
 	@echo "... edit_cache"
+	@echo "... plantation_pmf"
+	@echo "... src/pmf.o"
+	@echo "... src/pmf.i"
+	@echo "... src/pmf.s"
 	@echo "... src/trim.o"
 	@echo "... src/trim.i"
 	@echo "... src/trim.s"

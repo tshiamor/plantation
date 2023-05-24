@@ -15,5 +15,12 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-add_executable (${PROJECT_NAME} src/trim.cpp)
-target_link_libraries (${PROJECT_NAME} ${PCL_LIBRARIES})
+add_executable (${PROJECT_NAME}_trim src/trim.cpp )
+target_link_libraries (${PROJECT_NAME}_trim ${PCL_LIBRARIES})
+
+
+add_executable (${PROJECT_NAME}_pmf src/pmf.cpp )
+target_link_libraries (${PROJECT_NAME}_pmf ${PCL_LIBRARIES})
+
+
+

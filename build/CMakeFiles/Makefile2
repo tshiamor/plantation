@@ -60,39 +60,76 @@ CMAKE_SOURCE_DIR = /home/tshiamo/plantation
 CMAKE_BINARY_DIR = /home/tshiamo/plantation/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/plantation.dir
+# Target rules for target CMakeFiles/plantation_trim.dir
 
 # All Build rule for target.
-CMakeFiles/plantation.dir/all:
-	$(MAKE) -f CMakeFiles/plantation.dir/build.make CMakeFiles/plantation.dir/depend
-	$(MAKE) -f CMakeFiles/plantation.dir/build.make CMakeFiles/plantation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tshiamo/plantation/build/CMakeFiles --progress-num=1,2 "Built target plantation"
-.PHONY : CMakeFiles/plantation.dir/all
+CMakeFiles/plantation_trim.dir/all:
+	$(MAKE) -f CMakeFiles/plantation_trim.dir/build.make CMakeFiles/plantation_trim.dir/depend
+	$(MAKE) -f CMakeFiles/plantation_trim.dir/build.make CMakeFiles/plantation_trim.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tshiamo/plantation/build/CMakeFiles --progress-num=3,4 "Built target plantation_trim"
+.PHONY : CMakeFiles/plantation_trim.dir/all
 
 # Include target in all.
-all: CMakeFiles/plantation.dir/all
+all: CMakeFiles/plantation_trim.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/plantation.dir/rule: cmake_check_build_system
+CMakeFiles/plantation_trim.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tshiamo/plantation/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/plantation.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/plantation_trim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tshiamo/plantation/build/CMakeFiles 0
-.PHONY : CMakeFiles/plantation.dir/rule
+.PHONY : CMakeFiles/plantation_trim.dir/rule
 
 # Convenience name for target.
-plantation: CMakeFiles/plantation.dir/rule
+plantation_trim: CMakeFiles/plantation_trim.dir/rule
 
-.PHONY : plantation
-
-# clean rule for target.
-CMakeFiles/plantation.dir/clean:
-	$(MAKE) -f CMakeFiles/plantation.dir/build.make CMakeFiles/plantation.dir/clean
-.PHONY : CMakeFiles/plantation.dir/clean
+.PHONY : plantation_trim
 
 # clean rule for target.
-clean: CMakeFiles/plantation.dir/clean
+CMakeFiles/plantation_trim.dir/clean:
+	$(MAKE) -f CMakeFiles/plantation_trim.dir/build.make CMakeFiles/plantation_trim.dir/clean
+.PHONY : CMakeFiles/plantation_trim.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/plantation_trim.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/plantation_pmf.dir
+
+# All Build rule for target.
+CMakeFiles/plantation_pmf.dir/all:
+	$(MAKE) -f CMakeFiles/plantation_pmf.dir/build.make CMakeFiles/plantation_pmf.dir/depend
+	$(MAKE) -f CMakeFiles/plantation_pmf.dir/build.make CMakeFiles/plantation_pmf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tshiamo/plantation/build/CMakeFiles --progress-num=1,2 "Built target plantation_pmf"
+.PHONY : CMakeFiles/plantation_pmf.dir/all
+
+# Include target in all.
+all: CMakeFiles/plantation_pmf.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/plantation_pmf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tshiamo/plantation/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/plantation_pmf.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tshiamo/plantation/build/CMakeFiles 0
+.PHONY : CMakeFiles/plantation_pmf.dir/rule
+
+# Convenience name for target.
+plantation_pmf: CMakeFiles/plantation_pmf.dir/rule
+
+.PHONY : plantation_pmf
+
+# clean rule for target.
+CMakeFiles/plantation_pmf.dir/clean:
+	$(MAKE) -f CMakeFiles/plantation_pmf.dir/build.make CMakeFiles/plantation_pmf.dir/clean
+.PHONY : CMakeFiles/plantation_pmf.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/plantation_pmf.dir/clean
 
 .PHONY : clean
 
