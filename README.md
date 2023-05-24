@@ -2,7 +2,7 @@
 work on pointclouds captured from a plantation 
 
 
-### crop original pointcloud and work on a focuces section
+### crop original pointcloud and work on a focuced section
 
 
 ![image](https://github.com/tshiamor/plantation/assets/56265291/c5216657-8c62-4262-804f-1cdd967b5255)
@@ -13,10 +13,10 @@ work on pointclouds captured from a plantation
 
 
 
-
-### apply a filtering using ransac to rduce noisy data
-
-
-
 ### identify ground using a pmf filter, segment and separate into ground and objects 
+
+
+### apply filtering using ransac to reduce noisy data on objects detected
+
+
 
