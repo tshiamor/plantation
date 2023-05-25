@@ -93,13 +93,13 @@ the files plantation_reduced_object_inliers.pcd and plantation_reduced_ground.pc
 
 ### to view results:
 
-just the objects:
+- just the objects:
 
 ```
 $ pcl_viewer plantation_reduced_object_inliers.pcd 
 ```
 
-both objects and ground together:
+- both objects and ground together:
 
 ```
 $ pcl_viewer plantation_reduced_object_inliers.pcd plantation_reduced_ground.pcd
