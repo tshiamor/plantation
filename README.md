@@ -82,7 +82,7 @@ copy the original pointcloud(plantation.pcd) to the build directory
 
 ### to crop the initial pointcloud and view
 ```
-$ ./plantation_trim ```
+$ ./plantation_trim 
 $ pcl_viewer plantation_reduced.pcd  
 ```
 ### to apply the pmf filtering
