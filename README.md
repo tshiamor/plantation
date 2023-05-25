@@ -15,7 +15,7 @@ as seen pointcloud objects are not easy to view
 
 
 ### crop original pointcloud and work on a focuced section
-THis first section is to allow for easier viewing of a sub-sction as the map is quite large. The method used for cropping is a cropBox filter feature provided by pcl.This takes two bounds (defined by  Eigen::Vector4f) which is a 4 by 1 matix which is used to determine the minimum and maximum of a cube/cuboid to be cropped from the original pointcloud.   
+This first section is to allow for easier viewing of a sub-sction as the map is quite large. The method used for cropping is a cropBox filter feature provided by pcl.This takes two bounds (defined by  Eigen::Vector4f) which is a 1 by 4, row matix  or vector which is used to determine the lower and upper bounds of the cube/cuboid to be cropped from the original pointcloud.   
 
 
  <!--- ![image](https://github.com/tshiamor/plantation/assets/56265291/c5216657-8c62-4262-804f-1cdd967b5255 ) --->
@@ -30,6 +30,12 @@ THis first section is to allow for easier viewing of a sub-sction as the map is 
 
 
 ### identify ground using a pmf filter, segment and separate into ground and objects 
+results from the pmf are shown whereby the green is the ground whilst the grey are the objects i.e trees etc above the surface
+![ground and trees](https://github.com/tshiamor/plantation/assets/56265291/c0283ce0-b81a-4d8f-aa9a-f34b10a24153)
+
+close up view of the ground and trees
+
+![closeup_ground_n_trees](https://github.com/tshiamor/plantation/assets/56265291/c8073053-e3f5-438e-93d5-38481b8728ac)
 
 
 ### apply filtering using ransac to reduce noisy data on objects detected
