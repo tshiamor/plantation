@@ -18,5 +18,22 @@ work on pointclouds captured from a plantation
 
 ### apply filtering using ransac to reduce noisy data on objects detected
 
+non ground before filtering
+
+![image](https://github.com/tshiamor/plantation/assets/56265291/415a3d60-2df3-4340-91f9-59c4555f4201)
+
+
+view one of objects( non ground)
+![image](https://github.com/tshiamor/plantation/assets/56265291/6b22b443-235f-4cd1-ae30-a48546d1da0b) 
+view two of objects( non ground)
+![image](https://github.com/tshiamor/plantation/assets/56265291/4fbeedbf-e132-4f1c-b54f-e01246e3bfcf)
+
+view three of objects( non ground)
+![image](https://github.com/tshiamor/plantation/assets/56265291/d4c8ccaf-b86d-42f1-b10e-283eca7a2498)
+
+
+
+
+
 
 
