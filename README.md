@@ -33,10 +33,10 @@ This first section is to allow for easier viewing of a sub-sction as the map is 
 
 when using the pmf filter it is worth noting thee following parameters:
 
--setMaxWindowSize ( which is the size of the sliding window)
--setSlope ( amount of slope to cater for )
--setInitialDistance iitial starting distance that separates ground from objects of interest height)
--setMaxDistance (maximum expected height )
+- setMaxWindowSize ( which is the size of the sliding window)
+- setSlope ( amount of slope to cater for, elevation threshold )
+- setInitialDistance (initial starting distance that separates ground from objects of interest height)
+- setMaxDistance (maximum expected height )
 
 results from the pmf are shown whereby the green is the ground whilst the grey are the objects i.e trees etc above the surface
 ![ground and trees](https://github.com/tshiamor/plantation/assets/56265291/c0283ce0-b81a-4d8f-aa9a-f34b10a24153)
