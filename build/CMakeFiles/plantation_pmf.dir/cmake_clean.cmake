@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/plantation_pmf.dir/src/pmf.cpp.o"
-  "plantation_pmf.pdb"
+  "CMakeFiles/plantation_pmf.dir/src/pmf.cpp.o.d"
   "plantation_pmf"
+  "plantation_pmf.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
