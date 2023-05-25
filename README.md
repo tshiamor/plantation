@@ -67,5 +67,44 @@ view of the segmented ground and objects
 
 
 
+## build instructions:
+
+clone repo and build
+```
+git clone https://github.com/tshiamor/plantation.git
+cd plantation
+mkdir build && cd build
+cmake ..
+make
+```
+
+copy the original pointcloud(plantation.pcd) to the build directory
+
+### to crop the initial pointcloud and view
+```
+$ ./plantation_trim ```
+$ pcl_viewer plantation_reduced.pcd  
+```
+### to apply the pmf filtering
+  ```
+  $ ./plantation_pmf
+  ```
+the files plantation_reduced_object_inliers.pcd and plantation_reduced_ground.pcd shoulld be created.
+
+### to view results:
+
+just the objects:
+
+```
+$ pcl_viewer plantation_reduced_object_inliers.pcd 
+```
+
+both objects and ground together:
+
+```
+$ pcl_viewer plantation_reduced_object_inliers.pcd plantation_reduced_ground.pcd
+
+```
+
 
 
