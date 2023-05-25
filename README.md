@@ -55,6 +55,7 @@ view three of objects( non ground)
 
 view of the segmented ground and objects
 
+![combine_ground_filtered_objects](https://github.com/tshiamor/plantation/assets/56265291/5534a985-dc4a-470f-876b-3e0980fbb021)
 
 
 
