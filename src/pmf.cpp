@@ -17,7 +17,7 @@ int main(int argc, char* argv[]){
 
     pcl::PointCloud<pcl::PointXYZINormal>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZINormal>);
     pcl::PointCloud<pcl::PointXYZINormal>::Ptr cloud_out(new pcl::PointCloud<pcl::PointXYZINormal>);
-    pcl::PointCloud<pcl::PointXYZINormal>::Ptr final_filtered (new pcl::PointCloud<pcl::PointXYZINormal>);
+    //pcl::PointCloud<pcl::PointXYZINormal>::Ptr final_filtered (new pcl::PointCloud<pcl::PointXYZINormal>);
 
     pcl::PointIndicesPtr ground (new pcl::PointIndices);
 
@@ -54,8 +54,10 @@ int main(int argc, char* argv[]){
     std::cerr << "Object cloud after filtering: " << std::endl;
     std::cerr << *cloud_out << std::endl;
 
-    //writer.write<pcl::PointXYZINormal> ("plantation_reduced_objects.pcd", *cloud_out, false);
+    writer.write<pcl::PointXYZINormal> ("plantation_reduced_objects.pcd", *cloud_out, false);
+
     // Create the filtering object -2
+    /*
     pcl::StatisticalOutlierRemoval<pcl::PointXYZINormal> sor;
     sor.setInputCloud (cloud_out);
     sor.setMeanK (50);
@@ -69,7 +71,7 @@ int main(int argc, char* argv[]){
     sor.filter (*final_filtered);
     writer.write<pcl::PointXYZINormal> ("plantation_reduced_object_outliers.pcd", *final_filtered, false);
 
-
+    */
 
 
     return 0;
