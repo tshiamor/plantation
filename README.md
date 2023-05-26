@@ -46,7 +46,7 @@ close up view of the ground and trees
 ![closeup_ground_n_trees](https://github.com/tshiamor/plantation/assets/56265291/c8073053-e3f5-438e-93d5-38481b8728ac)
 
 
-### apply filtering using ransac to reduce noisy data on objects detected
+### apply filtering using statistical outlier reducer to reduce noisy data on objects detected
 
 non ground before filtering
 
@@ -106,5 +106,11 @@ $ pcl_viewer plantation_reduced_object_inliers.pcd plantation_reduced_ground.pcd
 
 ```
 
+- to view sor  filtered results:
+
+```
+$ pcl_viewer plantation_reduced_object_inliers.pcd
+
+```
 
 
