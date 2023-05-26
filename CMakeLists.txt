@@ -22,5 +22,8 @@ target_link_libraries (${PROJECT_NAME}_trim ${PCL_LIBRARIES})
 add_executable (${PROJECT_NAME}_pmf src/pmf.cpp )
 target_link_libraries (${PROJECT_NAME}_pmf ${PCL_LIBRARIES})
 
+add_executable (${PROJECT_NAME}_sor src/outlier_remover.cpp )
+target_link_libraries (${PROJECT_NAME}_sor ${PCL_LIBRARIES})
+
 
 
