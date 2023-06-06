@@ -17,7 +17,7 @@ int main(int argc, char* argv[]){
 	    return (-1);
 	}
 	 pcl::CropBox<pcl::PointXYZINormal> cropbox;
-	 cropbox.setMin(Eigen::Vector4f(0, 0, 0, 1));
+	 cropbox.setMin(Eigen::Vector4f(0, 0, -50, 1));
 	 cropbox.setMax(Eigen::Vector4f(200, 200, 200, 1));
 	 cropbox.setInputCloud(cloud);
 	 cropbox.filter(*cloud_filtered);
